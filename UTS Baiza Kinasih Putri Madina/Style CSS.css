@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2EBE5;
+    color: #352C2B;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2312;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+.split-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.split-side {
+    width: 50%;
+    min-height: 100vh;
+}
+
+
+.left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 60px;
+
+    color: #FFFFFF;
+
+    background-image:
+        linear-gradient(
+            rgba(35, 25, 25, 0.65),
+            rgba(35, 25, 25, 0.75)
+        ),
+        url("CORTIS\ OT5\ \(1\).png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 60px;
+    color: #FFFFFF;
+    background-color: #382F2D;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 520px;
+}
+
+.header img {
+    display: block;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+
+.header h1 {
+    margin-bottom: 8px;
+    color: #FFFFFF;
+    font-size: clamp(38px, 4vw, 54px);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.header p:first-of-type {
+    margin-bottom: 24px;
+    color: #f8f8f7;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header p:nth-of-type(2) {
+    max-width: 450px;
+    margin-bottom: 22px;
+    color: #E4DAD6;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.header p:nth-of-type(3) {
+    margin-bottom: 8px;
+    color: #c4ad70;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.header p:nth-of-type(4) {
+    color: #f1d9ad;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.right-side {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    padding: 50px 40px;
+    background-color: #f0ebe5;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 390px;
+}
+
+.eyebrow {
+    margin-bottom: 10px;
+    color: #3b3823;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.form-container > h1 {
+    margin-bottom: 12px;
+    color: #382F2D;
+    text-align: left;
+    font-size: clamp(30px, 3vw, 40px);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.form-container > p:not(.eyebrow) {
+    color: #786B67;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.sign-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px;
+    color: #786B67;
+    font-size: 14px;
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    min-height: 49px;
+    margin-bottom: 25px;
+    padding: 12px 16px;
+    border: 1px solid #D7C9C3;
+    border-radius: 9px;
+    color: #382F2D;
+    background-color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.google-button:hover {
+    border-color: #382F2D;
+    background-color: #FFF7FA;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+
+.form-group {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #382F2D;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="text"] {
+    display: block;
+    width: 100%;
+    min-height: 49px;
+    padding: 12px 14px;
+    border: 1px solid #D2C5BF;
+    border-radius: 9px;
+    outline: none;
+    color: #382F2D;
+    background-color: #FFFFFF;
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #938681;
+}
+
+.form-group input:focus {
+    border-color: #382F2D;
+    box-shadow: 0 0 0 3px rgba(149, 81, 109, 0.12);
+}
+
+
+.password-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.password-heading label {
+    margin-bottom: 0;
+}
+
+.forgot-link {
+    color: #95516D;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    padding-right: 45px;
+}
+
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle:hover {
+    background-color: #F9E3EC;
+}
+
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    margin: 0 0 25px;
+    color: #665955;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.remember-option input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: #382F2D;
+    cursor: pointer;
+}
+
+
+.sign-in-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    min-height: 51px;
+    padding: 13px 18px;
+    border: 1px solid #382F2D;
+    border-radius: 9px;
+    color: #FFFFFF;
+    background-color: #382F2D;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.sign-in-button:hover {
+    border-color: #332f1f;
+    background-color: #eee6a1;
+}
+
+.sign-in-button:active {
+    transform: scale(0.99);
+}
+
+.sign-in-button span {
+    font-size: 19px;
+}
+
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid #95516D;
+    outline-offset: 3px;
+}
+
+
+@media (max-width: 900px) {
+    .left-side {
+        padding: 35px;
+    }
+
+    .right-side {
+        padding: 35px 25px;
+    }
+
+    .header p:nth-of-type(4) {
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 767px) {
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-side {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .left-side {
+        min-height: 320px;
+        padding: 45px 28px;
+    }
+
+    .left-side::before {
+        top: -100px;
+    }
+
+    .left-side::after {
+        top: -60px;
+    }
+
+    .header h1 {
+        font-size: 38px;
+    }
+
+    .header p:nth-of-type(2) {
+        font-size: 13px;
+    }
+
+    .right-side {
+        flex: 1;
+        padding: 45px 25px;
+    }
+
+    .form-container {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 420px) {
+    .left-side {
+        padding: 35px 22px;
+    }
+
+    .right-side {
+        padding: 35px 20px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .header p:nth-of-type(4) {
+        font-size: 11px;
+    }
+
+    .form-container > h1 {
+        font-size: 30px;
+    }
+
+    .password-heading {
+        gap: 6px;
+    }
+
+    .forgot-link {
+        font-size: 11px;
+    }
+}
